@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- Meta dasar -->
+    <meta charset="UTF-8" />
+    <!-- Set karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Biar responsif -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Kompat IE -->
+    <title>Kopi Mantul — Portfolio</title>
+    <!-- Judul halaman -->
+    <!-- Stylesheet eksternal -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Hubungkan CSS -->
+  </head>
+  <body>
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header class="site-header">
+      <!-- Header utama -->
+      <div class="container header-inner">
+        <!-- Bungkus konten header -->
+        <a class="brand" href="#" onclick="navigate('home')"
+          ><!-- Logo/brand jadi tombol ke Home -->
+          <!-- Logo sederhana (emoji/initial), bisa diganti gambar -->
+          <span class="logo" aria-label="Logo Kopi Mantul">☕</span
+          ><!-- Ikon kopi -->
+          <span class="brand-text">Kopi Mantul</span
+          ><!-- Nama brand -->
+        </a>
+        <nav class="nav">
+          <!-- Navigasi utama -->
+          <ul class="nav-list">
+            <!-- Daftar menu -->
+            <li><a href="#" class="nav-link" data-target="home">Home</a></li>
+            <!-- Link Home -->
+            <li><a href="#" class="nav-link" data-target="profile">Our Profile</a></li>
+            <!-- Link Profile -->
+            <li><a href="#" class="nav-link" data-target="portfolio">Portfolio</a></li>
+            <!-- Link Portfolio -->
+            <li><a href="#" class="nav-link" data-target="message">Message Us</a></li>
+            <!-- Link Message Us -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+      <!-- ===== SECTION: HERO (HOME) ===== -->
+      <!-- Catatan: Section "home" menampilkan ringkasan semua bagian -->
+      <section id="home" class="section section--home">
+        <!-- Section Home -->
+        <div class="container">
+          <div class="hero">
+            <!-- Hero area -->
+            <h1 class="hero-title">
+              <span id="welcomeName"><!-- JS isi nama --></span>, Welcome to Kopi Mantul
+            </h1>
+            <!-- Judul hero -->
+            <p class="hero-subtitle">Nikmati racikan kopi terbaik untuk hari Anda — dari biji pilihan, diseduh oleh barista berpengalaman.</p>
+            <!-- Subjudul -->
+            <div class="hero-image">
+              <!-- Placeholder gambar besar -->
+              <!-- Gambar kopi (bisa diganti link lain) -->
+              <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1600&auto=format&fit=crop" alt="Secangkir kopi hangat" loading="lazy" /><!-- Gambar hero -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Ringkasan Our Headquarter di Home (sesuai wireframe) -->
+        <div class="container">
+          <hr class="divider" />
+          <!-- Garis pemisah -->
+          <h2 class="section-title">Our Headquarter</h2>
+          <!-- Judul subbagian -->
+          <div class="hq-grid">
+            <!-- Grid 3 kolom -->
+            <!-- Item HQ 1 -->
+            <div class="hq-item">
+              <div class="hq-avatar">
+                <!-- Lingkaran ikon -->
+                <img src="images/Banda Aceh.webp" alt="Kafe Banda Aceh" loading="lazy" /><!-- Foto cabang -->
+              </div>
+              <p class="hq-label">Banda Aceh</p>
+              <!-- Label kota -->
+            </div>
+            <!-- Item HQ 2 -->
+            <div class="hq-item">
+              <div class="hq-avatar">
+                <img src="images/Denpasar.webp" alt="Kafe Denpasar" loading="lazy" />
+              </div>
+              <p class="hq-label">Denpasar</p>
+            </div>
+            <!-- Item HQ 3 -->
+            <div class="hq-item">
+              <div class="hq-avatar">
+                <img src="images/Jakarta.webp" alt="Kafe Surabaya" loading="lazy" />
+              </div>
+              <p class="hq-label">Jakarta</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SECTION: OUR PROFILE ===== -->
+      <section id="profile" class="section is-hidden">
+        <!-- Disembunyikan default -->
+        <div class="container">
+          <h2 class="section-title">Our Profile</h2>
+          <!-- Judul section -->
+          <div class="profile-grid">
+            <!-- Grid dua kolom -->
+            <div class="profile-about">
+              <!-- Kolom kiri: teks -->
+              <h3>Tentang Kami</h3>
+              <!-- Subjudul -->
+              <p>Kopi Mantul adalah perusahaan kopi yang berdiri sejak 2015. Kami memilih biji kopi terbaik dari petani lokal Indonesia, memanggangnya dengan profil yang presisi, dan menyajikannya dengan penuh ketulusan.</p>
+              <!-- Deskripsi singkat -->
+              <h4>Visi</h4>
+              <p>Menjadi brand kopi lokal yang mendunia tanpa meninggalkan rasa Indonesia.</p>
+              <!-- Visi -->
+              <h4>Misi</h4>
+              <ul class="list">
+                <li>Memberdayakan petani kopi lokal melalui kemitraan berkelanjutan.</li>
+                <!-- Misi 1 -->
+                <li>Menghadirkan pengalaman kopi berkualitas untuk semua kalangan.</li>
+                <!-- Misi 2 -->
+                <li>Berinovasi pada produk dan layanan berbasis kebutuhan pelanggan.</li>
+                <!-- Misi 3 -->
+              </ul>
+              <h4>Nilai Perusahaan</h4>
+              <ul class="list">
+                <li>Kualitas • Kejujuran • Keberlanjutan</li>
+                <!-- Nilai -->
+              </ul>
+            </div>
+            <aside class="profile-facts">
+              <!-- Kolom kanan: fakta cepat -->
+              <div class="facts-card">
+                <h4>Fakta Singkat</h4>
+                <!-- Judul kartu -->
+                <ul>
+                  <li>Tahun berdiri: 2015</li>
+                  <!-- Fakta 1 -->
+                  <li>Cabang: Banda Aceh, Denpasar, Jakarta</li>
+                  <!-- Fakta 2 -->
+                  <li>Produk: Single origin, blend signature, cold brew</li>
+                  <!-- Fakta 3 -->
+                  <li>Sertifikasi: HACCP & Halal</li>
+                  <!-- Fakta 4 -->
+                </ul>
+              </div>
+              <div class="profile-photo">
+                <!-- Foto samping -->
+                <img src="images/roasting kopi.webp" alt="Proses roasting kopi" loading="lazy" />
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SECTION: PORTFOLIO ===== -->
+      <section id="portfolio" class="section is-hidden">
+        <!-- Disembunyikan default -->
+        <div class="container">
+          <h2 class="section-title">Portfolio</h2>
+          <!-- Judul section -->
+          <p class="section-lead">Beberapa karya dan produk andalan kami.</p>
+          <!-- Lead -->
+          <div class="card-grid">
+            <!-- Grid kartu produk -->
+            <!-- Kartu 1 -->
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1445077100181-a33e9ac94db0?q=80&w=800&auto=format&fit=crop" alt="Single Origin" loading="lazy" /><!-- Gambar produk -->
+              <div class="card-body">
+                <h3>Single Origin Aceh Gayo</h3>
+                <!-- Judul produk -->
+                <p>Notes: cokelat, karamel, citrus — roast medium.</p>
+                <!-- Deskripsi -->
+              </div>
+            </article>
+            <!-- Kartu 2 -->
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=800&auto=format&fit=crop" alt="Signature Blend" loading="lazy" />
+              <div class="card-body">
+                <h3>Signature Blend “Mantul”</h3>
+                <p>Perpaduan robusta & arabika untuk keseimbangan body dan aroma.</p>
+              </div>
+            </article>
+            <!-- Kartu 3 -->
+            <article class="card">
+              <img src="images/Cold Brew Bold.jpeg" alt="Cold Brew" loading="lazy" />
+              <div class="card-body">
+                <h3>Cold Brew Bold</h3>
+                <p>Diseduh dingin 18 jam — rasa halus, rendah asam.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SECTION: MESSAGE US ===== -->
+      <section id="message" class="section is-hidden">
+        <!-- Disembunyikan default -->
+        <div class="container"></div>
+          <h2 class="section-title">Message Us</h2>
+          <!-- Judul section -->
+
+          <div class="message-layout">
+            <!-- Dua kolom: form & panel info -->
+            <!-- == FORM KONTAK == -->
+            <form id="contactForm" class="form">
+              <!-- Form dengan id untuk JS -->
+              <label for="nama">Nama</label
+              ><!-- Label nama -->
+              <input type="text" id="nama" name="nama" placeholder="Tulis nama kamu" autocomplete="name" required /><!-- Input nama -->
+
+              <label for="dob">Tanggal Lahir</label
+              ><!-- Label tanggal -->
+              <input type="date" id="dob" name="dob" required /><!-- Input date -->
+
+              <fieldset class="fieldset">
+                <!-- Group radio gender -->
+                <legend>Jenis Kelamin</legend>
+                <!-- Judul group -->
+                <label class="radio">
+                  <input type="radio" name="gender" value="Laki-laki" required /><!-- Radio laki -->
+                  Laki-laki
+                </label>
+                <label class="radio">
+                  <input type="radio" name="gender" value="Perempuan" required /><!-- Radio perempuan -->
+                  Perempuan
+                </label>
+              </fieldset>
+
+              <label for="messageText">Pesan</label
+              ><!-- Label pesan -->
+              <textarea id="messageText" name="messageText" rows="4" placeholder="Tulis pesanmu di sini..." required></textarea
+              ><!-- Textarea -->
+
+              <button type="submit" class="btn">Submit</button
+              ><!-- Tombol submit -->
+              <p class="hint">* Semua kolom wajib diisi</p>
+              <!-- Catatan kecil -->
+            </form>
+
+            <!-- == PANEL INFO / HASIL == -->
+            <aside class="info-panel">
+              <!-- Panel kanan -->
+              <div class="info-card">
+                <!-- Kartu info -->
+                <h3>Current Info</h3>
+                <!-- Judul -->
+                <p id="currentTime">Current time: —</p>
+                <!-- Waktu real-time -->
+                <hr />
+                <div id="output">
+                  <!-- Hasil submit form akan dimasukkan JS ke sini -->
+                  <p><strong>Nama:</strong> —</p>
+                  <p><strong>Tanggal Lahir:</strong> —</p>
+                  <p><strong>Jenis Kelamin:</strong> —</p>
+                  <p><strong>Pesan:</strong> —</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <!-- Footer sederhana -->
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"><!-- JS isi tahun --></span> Kopi Mantul • Crafted with ☕
+        </p>
+        <!-- Teks hak cipta -->
+        <p class="credit">Created by Reza rolianda </p>
+        <!-- Kredit kecil -->
+      </div>
+    </footer>
+
+    <!-- Script eksternal -->
+    <script src="js/script.js"></script>
+    <!-- Hubungkan JS -->
+  </body>
+</html>
